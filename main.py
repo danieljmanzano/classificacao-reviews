@@ -15,18 +15,19 @@ def carrega_arquivo(): # o arquivo é muito grande então to carregando só um p
 def main():
     df_amostra = carrega_arquivo()
     
-    # Exibe as primeiras linhas do DataFrame
+    # mostra as primeiras linhas do dataframe
     print(df_amostra.head())
     print("--------------------------------")
-    # Exibe informações gerais do DataFrame
+    
+    # mostra informações gerais do dataframe
     print(df_amostra.info())
     print("--------------------------------")
 
-    # Exibe estatísticas descritivas do DataFrame
+    # mostra estatísticas descritivas do dataframe
     print(df_amostra.describe())
     print("--------------------------------")
     
-    # Verifica se existem valores ausentes
+    # verifica se existem valores ausentes
     print(df_amostra.isnull().sum())
     print("--------------------------------")
 
